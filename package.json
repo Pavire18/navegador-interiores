@@ -2,6 +2,7 @@
   "name": "navegador-interiores",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Pavire18.github.io/navegador-interiores/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

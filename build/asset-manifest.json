@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/navegador-interiores/build/static/css/main.e6c13ad2.css",
+    "main.js": "/navegador-interiores/build/static/js/main.514475d6.js",
+    "static/js/592.1767a931.chunk.js": "/navegador-interiores/build/static/js/592.1767a931.chunk.js",
+    "index.html": "/navegador-interiores/build/index.html",
+    "main.e6c13ad2.css.map": "/navegador-interiores/build/static/css/main.e6c13ad2.css.map",
+    "main.514475d6.js.map": "/navegador-interiores/build/static/js/main.514475d6.js.map",
+    "592.1767a931.chunk.js.map": "/navegador-interiores/build/static/js/592.1767a931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.514475d6.js"
+  ]
+}
