@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route, HashRouter } from "react-router-dom";
+import {  Route, HashRouter, Routes} from "react-router-dom";
 import NotFound from './components/NotFound';
 import NavegadorInteriores from './components/NavegadorInteriores/NavegadorInteriores';
 
@@ -10,13 +10,13 @@ function App() {
     <div className="App">
       <h1>Datos de posición recibidos por QR</h1>
       <HashRouter basename='/navegador-interiores'>
-        <Switch>
+        <Routes>
           {/* Rutas cargadas normal (no lazy) */}
-          <Route path='/navigator/:id/:place/:floor' element={<React.Suspense fallback={<p>Cargando...</p>}> <NavegadorInteriores></NavegadorInteriores> </React.Suspense>}></Route>
+          <Route path=':id/:place/:floor' element={<React.Suspense fallback={<p>Cargando...</p>}> <NavegadorInteriores></NavegadorInteriores> </React.Suspense>}></Route>
 
           {/* Paginas no encontradas */}
           <Route path="*" element={<React.Suspense fallback={<p>Cargando...</p>}> <NotFound></NotFound> </React.Suspense>}></Route>
-        </Switch>
+        </Routes>
 
       </HashRouter>
     </div>
