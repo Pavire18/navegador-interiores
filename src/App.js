@@ -12,10 +12,10 @@ function App() {
       <HashRouter basename='/navegador-interiores'>
         <Routes>
           {/* Rutas cargadas normal (no lazy) */}
-          <Route path=':id/:place/:floor' element={<React.Suspense fallback={<p>Cargando...</p>}> <NavegadorInteriores></NavegadorInteriores> </React.Suspense>}></Route>
+          <Route path=':id/:place/:floor' component={<React.Suspense fallback={<p>Cargando...</p>}> <NavegadorInteriores></NavegadorInteriores> </React.Suspense>}></Route>
 
           {/* Paginas no encontradas */}
-          <Route path="*" element={<React.Suspense fallback={<p>Cargando...</p>}> <NotFound></NotFound> </React.Suspense>}></Route>
+          <Route path="*" component={<React.Suspense fallback={<p>Cargando...</p>}> <NotFound></NotFound> </React.Suspense>}></Route>
         </Routes>
 
       </HashRouter>
