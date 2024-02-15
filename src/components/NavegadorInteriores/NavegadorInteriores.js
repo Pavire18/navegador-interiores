@@ -11,8 +11,6 @@ const NavegadorInteriores = () => {
         <p>id: {id}</p>
         <p>place: {place}</p>
         <p>floor: {floor}</p>
-        <p>id: {id}</p>
-        <p>id: {id}</p>
       </div>
     );
   }
